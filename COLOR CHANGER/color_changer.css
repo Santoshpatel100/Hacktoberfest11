@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    padding:80px
+    width: 100%;
+
+}
+.button{
+    width: 100px;
+    height: 80px;
+    border: 2px solid dimgray;
+    box-shadow: 2px, 2px 0.2 rgb(lightcoral, darkseagreen, lightskyblue);
+    border-radius: 20px;
+    margin: 8px;
+}
+#grey{
+    background-color: grey;
+        border-color: dimgray;
+
+}
+#blue{
+    background-color: blue;
+        border-color: midnightblue;
+
+}
+#green{
+    background-color:greenyellow;
+        border-color: lime;
+
+}
+#yellow{
+    background-color: yellow;
+        border-color:yellowgreen;
+
+}
+#pink{
+    background-color: palevioletred;
+    border-color: red;
+}
+
+
+h1{
+    text-align:center;
+    padding-top: 50px;
+}
