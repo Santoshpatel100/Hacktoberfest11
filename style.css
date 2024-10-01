@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 body {
   width:100%;
@@ -17,10 +21,11 @@ body {
   100% {background-color: lemonchiffon;}
 }
 .nav{
+    width: 100%
     display: flex;
     align-items: center;
-    align-content: center;
-    gap: 28vw;
+    justify-content: space-between;
+    padding: 5px 10px;
     background-image: url(https://hacktoberfest.com/_next/static/media/top-dots.e352f2dc.svg);
 }
 .nav img{
