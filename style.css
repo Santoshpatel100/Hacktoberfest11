@@ -25,6 +25,11 @@ body {
 }
 .nav img{
     width: 15vw;
+    cursor: pointer;
+}
+.nav img:hover{
+  background-color: aquamarine;
+  
 }
 .nav a{
     cursor: pointer;
