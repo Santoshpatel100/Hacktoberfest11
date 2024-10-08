@@ -8,8 +8,8 @@
     <link rel="icon" href="logo.jpg">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <!-- Topbar --->
@@ -49,9 +49,6 @@
     <div class="content">
       <h2 class="title">Santosh Patel</h2>
       <p class="copy">Frontend-Developer</p>
-
-   
-  
       <div class="githubicon"><a href="https://github.com/Santoshpatel112" target="_blank"><i class="ri-github-line"></i></a>
         <a href="https://www.linkedin.com/in/santosh-patel-9202492a4/" target="_blank"><i class="ri-linkedin-fill"></i></i></a>
     </div>
@@ -80,6 +77,19 @@
     </div>
   </div>
   </div>
+
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Kartik Nagare</h2>
+      <p class="copy">frontend developer & python developer</p>
+      <div class="githubicon">
+        <a href="https://github.com/kartik3165" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://kanbs.netlify.app/" target="_blank"><i class="ri-linkedin-fill"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+
   <div class="card">
     <div class="content">
       <h2 class="title">Desert Destinations</h2>
@@ -95,7 +105,35 @@
     </div>
   </div>
 </main>
-
-
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <p>© 2024 Hacktoberfest Contributors. All Rights Reserved.</p>
+    <p class="made-with-love">Made with ❤️ </p>
+<!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-top-btn">
+      <span class="arrow-up">↑</span> Back to Top
+    </button>
+  </div>
+</footer>
+<script>
+  // Show or hide the scroll-to-top button based on scroll position
+  window.addEventListener('scroll', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    if (window.scrollY > 300) {  // Show button after 300px of scroll
+      scrollBtn.classList.add('show');
+    } else {
+      scrollBtn.classList.remove('show');
+    }
+  });
+  
+  // Scroll to top functionality with smooth scrolling
+  document.getElementById('scrollToTop').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  </script>
 </body>
 </html>
