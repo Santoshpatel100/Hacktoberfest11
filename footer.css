@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Breathing effect for body */
+  body {
+    animation: breathing 5s ease-in-out infinite;
+  }
+  
+  /* Breathing animation */
+  @keyframes breathing {
+    0%, 100% {
+      background-color: #f4f4f9;
+    }
+    50% {
+      background-color: #e6e6e6;
+    }
+  }
+  
+  /* Styling for header */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  footer .love {
+    font-size: 14px;
+    color: #ff5733;
+    font-weight: bold;
+  }
+  
+  footer .love:before {
+    content: "♥";
+    margin-right: 5px;
+    color: red;
+  }
+  
+  /* Scroll to top button styling */
+  .scroll-top-btn {
+    position: fixed;              /* Stay at the bottom right corner */
+    bottom: 70px;                 /* 20px from the bottom */
+    right: 20px;                  /* 20px from the right */
+    padding: 10px 20px;           /* Padding for the button */
+    background-color: #ff5733;    /* Vibrant orange for the button */
+    color: white;
+    border: none;
+    border-radius: 50px;          /* Rounded button */
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0;                   /* Initially hidden */
+    visibility: hidden;           /* Hidden state */
+    transition: all 0.3s ease;    /* Smooth transition */
+    z-index: 1000;                /* Stay on top of other elements */
+  }
+  
+  .scroll-top-btn .arrow-up {
+    font-size: 16px;              /* Larger arrow size */
+    margin-right: 5px;            /* Space between arrow and text */
+  }
+  
+  /* Hover and focus effect */
+  .scroll-top-btn:hover,
+  .scroll-top-btn:focus {
+    background-color: #ff4519;    /* Darker orange on hover */
+    outline: none;                /* Remove button outline */
+    transform: translateY(-2px);  /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  /* Show button when scrolling */
+  .scroll-top-btn.show {
+    opacity: 1;                   /* Fully visible */
+    visibility: visible;           /* Visible state */
+  }
+  
+  /* Button on small screens */
+  @media (max-width: 768px) {
+    .scroll-top-btn {
+      font-size: 12px;            /* Smaller text size */
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scroll-top-btn {
+      font-size: 10px;            /* Even smaller text on mobile */
+      padding: 6px 12px;
+    }
+  }
+  
